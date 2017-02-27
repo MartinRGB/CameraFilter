@@ -45,6 +45,7 @@ import cn.nekocode.camerafilter.filter.CrackedFilter;
 import cn.nekocode.camerafilter.filter.CrosshatchFilter;
 import cn.nekocode.camerafilter.filter.EMInterferenceFilter;
 import cn.nekocode.camerafilter.filter.EdgeDetectionFilter;
+import cn.nekocode.camerafilter.filter.HeightfieldFilter;
 import cn.nekocode.camerafilter.filter.JFAVoronoiFilter;
 import cn.nekocode.camerafilter.filter.LegofiedFilter;
 import cn.nekocode.camerafilter.filter.LichtensteinEsqueFilter;
@@ -52,6 +53,7 @@ import cn.nekocode.camerafilter.filter.MappingFilter;
 import cn.nekocode.camerafilter.filter.MirrorsFilter;
 import cn.nekocode.camerafilter.filter.MoneyFilter;
 import cn.nekocode.camerafilter.filter.NoiseWarpFilter;
+import cn.nekocode.camerafilter.filter.OldMovieFilter;
 import cn.nekocode.camerafilter.filter.OriginalFilter;
 import cn.nekocode.camerafilter.filter.PixelartFilter;
 import cn.nekocode.camerafilter.filter.PixelizeFilter;
@@ -175,6 +177,8 @@ public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListe
         cameraFilterMap.append(R.id.filter24, new ColormappingFilter(context));
         cameraFilterMap.append(R.id.filter25, new PixelartFilter(context));
         cameraFilterMap.append(R.id.filter26, new SeventyFilter(context));
+        cameraFilterMap.append(R.id.filter27, new OldMovieFilter(context));
+        cameraFilterMap.append(R.id.filter28, new HeightfieldFilter(context));
         setSelectedFilter(selectedFilterId);
 
         // Create texture for camera preview

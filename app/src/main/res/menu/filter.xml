@@ -170,4 +170,16 @@
         android:title="70's"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/filter27"
+        android:title="Old Video"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter28"
+        android:title="HeightField"
+        app:showAsAction="never"
+        />
 </menu>
