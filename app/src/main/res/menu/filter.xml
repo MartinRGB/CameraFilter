@@ -134,4 +134,40 @@
         android:title="JFAVoronoi"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/filter21"
+        android:title="Sigmoid"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter22"
+        android:title="Mirrors"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter23"
+        android:title="Colorblind"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter24"
+        android:title="ColorMapping"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter25"
+        android:title="PixelArt"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter26"
+        android:title="70's"
+        app:showAsAction="never"
+        />
 </menu>

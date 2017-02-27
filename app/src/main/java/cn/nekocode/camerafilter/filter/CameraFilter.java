@@ -137,6 +137,7 @@ public abstract class CameraFilter {
         setupShaderInputs(program, VERTEX_BUF, TEXTURE_COORD_BUF, iResolution, iChannels, iChannelResolutions);
     }
 
+
     void setupShaderInputs(int program, FloatBuffer vertex, FloatBuffer textureCoord, int[] iResolution, int[] iChannels, int[][] iChannelResolutions) {
         GLES20.glUseProgram(program);
 
