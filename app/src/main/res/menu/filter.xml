@@ -182,4 +182,59 @@
         android:title="HeightField"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/filter29"
+        android:title="Page Curl"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter30"
+        android:title="Billboard"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter31"
+        android:title="Scary"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter32"
+        android:title="Intensity"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/filter33"
+        android:title="Infinite"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter34"
+        android:title="Glitch"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter35"
+        android:title="Motion Blur"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter36"
+        android:title="Terrible TV"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/filter37"
+        android:title="RGB"
+        app:showAsAction="never"
+        />
 </menu>

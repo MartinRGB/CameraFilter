@@ -35,6 +35,7 @@ import javax.microedition.khronos.egl.EGLSurface;
 
 import cn.nekocode.camerafilter.filter.AsciiArtFilter;
 import cn.nekocode.camerafilter.filter.BasicDeformFilter;
+import cn.nekocode.camerafilter.filter.BillboardFilter;
 import cn.nekocode.camerafilter.filter.BlueorangeFilter;
 import cn.nekocode.camerafilter.filter.CameraFilter;
 import cn.nekocode.camerafilter.filter.ChromaticAberrationFilter;
@@ -45,22 +46,30 @@ import cn.nekocode.camerafilter.filter.CrackedFilter;
 import cn.nekocode.camerafilter.filter.CrosshatchFilter;
 import cn.nekocode.camerafilter.filter.EMInterferenceFilter;
 import cn.nekocode.camerafilter.filter.EdgeDetectionFilter;
+import cn.nekocode.camerafilter.filter.GlitchFilter;
 import cn.nekocode.camerafilter.filter.HeightfieldFilter;
+import cn.nekocode.camerafilter.filter.InfiniteFilter;
+import cn.nekocode.camerafilter.filter.IntensityFilter;
 import cn.nekocode.camerafilter.filter.JFAVoronoiFilter;
 import cn.nekocode.camerafilter.filter.LegofiedFilter;
 import cn.nekocode.camerafilter.filter.LichtensteinEsqueFilter;
 import cn.nekocode.camerafilter.filter.MappingFilter;
 import cn.nekocode.camerafilter.filter.MirrorsFilter;
 import cn.nekocode.camerafilter.filter.MoneyFilter;
+import cn.nekocode.camerafilter.filter.MotionblurFilter;
 import cn.nekocode.camerafilter.filter.NoiseWarpFilter;
 import cn.nekocode.camerafilter.filter.OldMovieFilter;
 import cn.nekocode.camerafilter.filter.OriginalFilter;
+import cn.nekocode.camerafilter.filter.PagecurlFilter;
 import cn.nekocode.camerafilter.filter.PixelartFilter;
 import cn.nekocode.camerafilter.filter.PixelizeFilter;
 import cn.nekocode.camerafilter.filter.PolygonizationFilter;
+import cn.nekocode.camerafilter.filter.RGBFilter;
 import cn.nekocode.camerafilter.filter.RefractionFilter;
+import cn.nekocode.camerafilter.filter.ScaryFilter;
 import cn.nekocode.camerafilter.filter.SeventyFilter;
 import cn.nekocode.camerafilter.filter.SigmoidFilter;
+import cn.nekocode.camerafilter.filter.TerribleTVFilter;
 import cn.nekocode.camerafilter.filter.TileMosaicFilter;
 import cn.nekocode.camerafilter.filter.TrianglesMosaicFilter;
 
@@ -179,6 +188,15 @@ public class CameraRenderer implements Runnable, TextureView.SurfaceTextureListe
         cameraFilterMap.append(R.id.filter26, new SeventyFilter(context));
         cameraFilterMap.append(R.id.filter27, new OldMovieFilter(context));
         cameraFilterMap.append(R.id.filter28, new HeightfieldFilter(context));
+        cameraFilterMap.append(R.id.filter29, new PagecurlFilter(context));
+        cameraFilterMap.append(R.id.filter30, new BillboardFilter(context));
+        cameraFilterMap.append(R.id.filter31, new ScaryFilter(context));
+        cameraFilterMap.append(R.id.filter32, new IntensityFilter(context));
+        cameraFilterMap.append(R.id.filter33, new InfiniteFilter(context));
+        cameraFilterMap.append(R.id.filter34, new GlitchFilter(context));
+        cameraFilterMap.append(R.id.filter35, new MotionblurFilter(context));
+        cameraFilterMap.append(R.id.filter36, new TerribleTVFilter(context));
+        cameraFilterMap.append(R.id.filter37, new RGBFilter(context));
         setSelectedFilter(selectedFilterId);
 
         // Create texture for camera preview
